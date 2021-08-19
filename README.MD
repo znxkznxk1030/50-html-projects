@@ -8,3 +8,5 @@
 
 
 ## Day 1
+- background-size: auto 100%; 보다 cover;를 사용하는 것이 더 좋다.
+- flex layout에서 아이템 클래스에 flex를 적용하면 상대적 크기를 정할 수 있다.
