@@ -6,9 +6,9 @@
 ## Day 0
 - 보일러 플레이트 작성
 
-## Day 1
+## Day 1 ( Expanding Cards )
 - background-size: auto 100%; 보다 cover;를 사용하는 것이 더 좋다.
 - flex layout에서 아이템 클래스에 flex를 적용하면 상대적 크기를 정할 수 있다.
 
-## Day 2
+## Day 2 ( Progress Steps )
 - flex-direction 의 default 값은 row ( 수평 정렬 ) 이다.
