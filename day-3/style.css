@@ -13,6 +13,7 @@ html, body {
 }
 
 body {
+  position: relative;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
   background: #333;
@@ -32,14 +33,15 @@ body {
   transform: rotate(-20deg);
 }
 
-.container.show-nav .circle {
-  transform: rotate(-70deg);
+.circle.rotate-circle {
+  transform: rotate(-90deg);
 }
 
 .circle-container {
   position: fixed;
   top: -100px;
   left: -100px;
+  z-index: 100;
 }
 
 .circle {
@@ -102,7 +104,7 @@ nav ul li {
   text-transform: uppercase;
   color: #fff;
   margin: 40px 0;
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
   transition: transform .4s ease-in;
 }
 
