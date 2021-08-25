@@ -16,3 +16,5 @@
 
 ### Day - 3 | Rotating Navigation 
 - 이미지 넘칠 땐, max-width: 100%;
+- li + li 하면 두번째 li 부터 적용
+- hierarchy 관계가 아닌 두 element를 연관 지을때 + 사용
