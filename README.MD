@@ -18,3 +18,55 @@
 - 이미지 넘칠 땐, max-width: 100%;
 - li + li 하면 두번째 li 부터 적용
 - "+" : 인접 선택자로 부르는 선택자입니다. 앞의 요소 바로 뒤에 있는 요소만 선택합니다. 위 코드에서 각 ul 뒤에 오는 첫 번째 단락의 텍스트만 빨간색이 됩니다.
+
+### Day - 4 Hidden Search Widget
+- background color에 linear-gradient 사용하고 싶을땐 background-image
+  ``` css
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2)
+  ```
+- css 에서 클래스 이어붙이는건 한 element
+``` css
+.search.active {
+
+}
+```
+
+``` html
+<element class="search active" >
+```
+
+- 띄어쓰기 하는건 부모 자식
+``` css
+.search .input {
+
+}
+```
+
+``` html 
+<element class="search">
+  <element class="input">
+```
+
+- ","로 구분하는건 여러개
+``` css
+.btn:focus, .input:focus {
+
+}
+```
+
+``` html
+<element class="input" :focus>
+</element>
+
+<element class="btn" :focus>
+</element>
+```
+
+- 해당 element로 focus하게 하기
+
+``` javascript
+const input = document.querySelector('.input')
+
+input.focus()
+
+```
