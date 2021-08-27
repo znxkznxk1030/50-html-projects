@@ -93,3 +93,13 @@ filter: blur(70px);
 background: url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80') no-repeat center center/cover;
 ```
 
+- scale 조절 마법 함수
+
+``` javascript
+scale(progress, 0, 100, 1, 0); // 0 부터 100사이에 있는 progress를 1부터 0 사이의 숫자로 맵핑시켜줌.
+
+
+const scale = (num, in_min, in_max, out_min, out_max) => {
+  return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
+}
+```
