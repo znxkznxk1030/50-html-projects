@@ -70,3 +70,26 @@ const input = document.querySelector('.input')
 input.focus()
 
 ```
+
+### Day 5 - Blurry Loading
+- blur 효과룰 주고싶을때,
+
+``` css
+filter: blur(70px);
+```
+
+- blur 효과 줄때 테두리가 빈 현상이 나타다서, 30px씩 땡긴다.
+
+``` css
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vw + 60px);
+```
+
+- background image를 꽉 채우고 싶을때, cover (아닐땐 contain)
+
+``` css
+background: url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80') no-repeat center center/cover;
+```
+
