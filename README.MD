@@ -103,3 +103,22 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
   return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 }
 ```
+
+### Day 6 | Scroll Animation
+- height에서 벗어난 컨텐츠가 짤릴때
+  1. overflow 확인
+  2. height: auto;
+
+- 짝수번째 elements 에 적용
+
+``` css
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+```
+
+- 해당 dom의 위치 & 사이즈를 알고싶을때
+
+``` javascript
+box.getBoundingClientRect();
+```
