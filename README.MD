@@ -122,3 +122,29 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
 ``` javascript
 box.getBoundingClientRect();
 ```
+
+### Day 7 | Split Landing Page
+- css 에서 변수 사용하기
+
+``` css
+/* :root 안에서 선언 */
+:root {
+  --left-bg-color: rgba()
+}
+
+/* 사용하기 */
+background-color: var(--left-bg-color);
+```
+
+- asolute 포지션 가운데 맞추기 hack
+
+``` css
+left: 50%;                    // 전체의 50%만큼 옮기고,
+transform: translateX(-50%);  // 내부 컨텐츠 크기의 50% 만큼 뒤로 빼고
+```
+
+- 자동으로 줄바꿈 하는거 막기
+
+``` css 
+white-space: nowrap;
+```
