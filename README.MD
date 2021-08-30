@@ -148,3 +148,25 @@ transform: translateX(-50%);  // 내부 컨텐츠 크기의 50% 만큼 뒤로 �
 ``` css 
 white-space: nowrap;
 ```
+
+### Day - 8 | Form Input Wave
+- input 에 포커스나 valid시 못생긴 outline 없애기
+
+``` css
+.form-control input:focus, .form-control input:valid {
+  outline: 0;
+}
+```
+
+- display: inline-block; 
+> 한줄로 나란히 배치
+
+> width, height, margin, padding 지정 가능
+
+- 왜인지는 모르지만 button에 font-family가 inherit 되지 않아 추가 했음.
+
+``` css
+  font-family: inherit;
+```
+
+> https://www.w3schools.com/cssref/css_default_values.asp
