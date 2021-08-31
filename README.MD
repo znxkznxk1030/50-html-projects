@@ -170,3 +170,22 @@ white-space: nowrap;
 ```
 
 > https://www.w3schools.com/cssref/css_default_values.asp
+
+### Day - 9 | Sound Board
+- Vscode studio | 같은 단어 한번 변경
+> cmd + d
+
+- 화면에서 audio 효과를 내고싶을때, html 한구석에 audio tag를 선언
+``` html
+  <audio id="applause" src="sounds/applause.mp3"></audio>
+  <audio id="boo" src="sounds/boo.mp3"></audio>
+```
+
+- audio stop하기
+
+``` javascript
+const song = document.getElementById(sound)
+
+song.pause();
+song.currentTime = 0; // 시간도 0 으로 되돌리기
+```
