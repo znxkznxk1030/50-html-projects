@@ -189,3 +189,11 @@ const song = document.getElementById(sound)
 song.pause();
 song.currentTime = 0; // 시간도 0 으로 되돌리기
 ```
+
+
+### Day - 10 | Dad Jokes
+- 자간 조절
+
+``` css
+letter-spacing: 2px;
+```
