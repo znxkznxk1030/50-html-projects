@@ -197,3 +197,10 @@ song.currentTime = 0; // 시간도 0 으로 되돌리기
 ``` css
 letter-spacing: 2px;
 ```
+
+### Day - 11 | Event KeyCodes
+- javascript event keycode site
+> https://keycode.info/
+
+- inline-flex
+> Inline 특성의 Flex Container를 정의 ( flex는 Block )
