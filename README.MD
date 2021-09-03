@@ -237,3 +237,9 @@ letter-spacing: 2px;
 content:'\f075';
 font-family: 'Font Awesome 5 Free';
 ```
+
+- 부모 element 가져오기
+
+``` javascript 
+el.parentNode
+```
