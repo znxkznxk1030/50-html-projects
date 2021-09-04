@@ -224,25 +224,35 @@ letter-spacing: 2px;
 
 > Inline 특성의 Flex Container를 정의 ( flex는 Block )
 
-
 ### Day - 12 | FAQ Collapse
-- unicode로 font awesome 사용하기
 
-``` html
+* unicode로 font awesome 사용하기
+
+```html
 <!-- 현재버전은 font-family: 'Font Awesome 5 Free'; 지원이 안되는 듯.. -->
 <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 ```
 
-``` css
+```css
 content:'\f075';
 font-family: 'Font Awesome 5 Free';
 ```
 
-- 부모 element 가져오기
+* 부모 element 가져오기
 
 ``` javascript 
 el.parentNode
+
 ```
 
 ### Day - 13 | Random Choice Picker
+
 - 자유로운 input을 만들땐 textarea 태그 사용 ( html5 기본 태그)
+
+- 스크립트에서 tag생성
+
+``` javascript
+const tagEl = document.createElement('span')
+        tagEl.classList.add('tag')
+        tagEl.innerText = tag
+```
