@@ -243,3 +243,6 @@ font-family: 'Font Awesome 5 Free';
 ``` javascript 
 el.parentNode
 ```
+
+### Day - 13 | Random Choice Picker
+- 자유로운 input을 만들땐 textarea 태그 사용 ( html5 기본 태그)
