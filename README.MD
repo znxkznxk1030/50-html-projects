@@ -256,3 +256,9 @@ const tagEl = document.createElement('span')
         tagEl.classList.add('tag')
         tagEl.innerText = tag
 ```
+
+- randomInt ( 0 ~ limit )
+
+``` javascript
+Math.floor(Math.random() * limit)
+```
