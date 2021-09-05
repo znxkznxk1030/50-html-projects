@@ -276,3 +276,7 @@ background-image: linear-gradient(to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50
 ```css
   list-style-type: none;
 ```
+
+* margin-top, margin-bottom 의 auto는 실제론 0 이다
+> 수직정렬 가운데로 맞추는건 margin으로 하는건 불가능하다.
+
