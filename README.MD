@@ -257,8 +257,22 @@ const tagEl = document.createElement('span')
         tagEl.innerText = tag
 ```
 
-- randomInt ( 0 ~ limit )
+* randomInt ( 0 ~ limit )
 
-``` javascript
+```javascript
 Math.floor(Math.random() * limit)
+```
+
+### Day - 14 | Animated Navigation
+
+* linear-gradient 로 반땅하기
+
+```css
+background-image: linear-gradient(to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50%, #5290f9 100%);
+```
+
+* ul 스타일 없애기
+
+```css
+  list-style-type: none;
 ```
