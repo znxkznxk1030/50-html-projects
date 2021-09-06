@@ -278,7 +278,59 @@ background-image: linear-gradient(to bottom, #eafbff 0%, #eafbff 50%, #5290f9 50
 ```
 
 * margin-top, margin-bottom 의 auto는 실제론 0 이다
+
 > 수직정렬 가운데로 맞추는건 margin으로 하는건 불가능하다.
 
 ### Day - 15 | Incrementing Counter
--
+
+* data-* attribute 사용하기
+
+```html
+<div class="counter" data-target="7500"></div>
+```
+
+```javascript
+const counter = document.querySelector('.counter');
+const data = counter.dataset;
+const target = counter.getAttribute('data-target')
+```
+
+```css
+.counter::before {
+    content: attr(data-target);
+}
+
+.counter[data-target='7500'] {
+    width: 400px;
+}
+```
+
+* String -> Number
+
+```javascript
+const c = +counter.innerText
+```
+
+* Number -> String
+
+```javascript
+counter.innerText = '' + Math.ceil(c + increment)
+```
+
+* 증가하는 모션 카운더 만들기
+
+```javascript
+const updateCounter = () => {
+    const target = counter.getAttribute('data-target')
+
+    const c = +counter.innerText
+    const increment = target / 200
+
+    if (c < target) {
+        counter.innerText = '' + Math.ceil(c + increment)
+        setTimeout(updateCounter, 1)
+    } else {
+        counter.innerText = target
+    }
+}
+```
