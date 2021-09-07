@@ -334,3 +334,23 @@ const updateCounter = () => {
     }
 }
 ```
+
+### Day - 16 | Drink Water
+
+* flexbox로 여러줄 만들기 > flex-wrap: wrap; 이용
+
+```css
+.cups {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+}
+```
+
+* 필요하다면 display: flex 덕덕지 나쁘지 않은 듯?
+
+- 드래그 방지
+
+``` css
+user-select: none;
+```
