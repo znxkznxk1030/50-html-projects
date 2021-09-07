@@ -3,6 +3,8 @@ const liters = document.getElementById('liters');
 const percentages = document.getElementById('percentage')
 const remained = document.getElementById('remained')
 
+updateBigCup()
+
 smallCups.forEach((cup, idx) => {
     cup.addEventListener('click', () => {
         highlightCups(idx)
@@ -12,18 +14,41 @@ smallCups.forEach((cup, idx) => {
 function highlightCups(idx) {
     const currCup = smallCups[idx]
 
-    if (currCup.classList.contains('full')
+    if (currCup && currCup.classList.contains('full')
         && !currCup.nextElementSibling.classList.contains('full')) {
         idx--;
     }
 
-    let drank = 0;
     smallCups.forEach((cup, _idx) => {
         cup.classList.remove('full')
 
         if (idx >= _idx) {
             cup.classList.add('full')
-            drank += 250;
         }
     })
+
+    updateBigCup();
+}
+
+function updateBigCup() {
+    const fullCups = document.querySelectorAll('.cup-small.full').length
+    const totalCups = smallCups.length
+
+    if (fullCups === 0) {
+        percentages.style.visibility = 'hidden'
+        percentages.style.height = 0
+    } else {
+        percentages.style.visibility = 'visible'
+        percentages.style.height = `${fullCups / totalCups * 330}px`
+        percentages.innerText = fullCups / totalCups * 100 + '%'
+    }
+
+    if (fullCups == totalCups) {
+        remained.style.visibility = 'hidden'
+        remained.style.height = 0
+    } else {
+        remained.style.visibility = 'visible'
+        remained.style.height = 'auto'
+        liters.innerText = `${2 - (250 * fullCups / 1000)}L`
+    }
 }

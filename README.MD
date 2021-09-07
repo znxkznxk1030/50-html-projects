@@ -349,8 +349,19 @@ const updateCounter = () => {
 
 * 필요하다면 display: flex 덕덕지 나쁘지 않은 듯?
 
-- 드래그 방지
+* 드래그 방지
 
-``` css
+```css
 user-select: none;
+```
+
+* DOM은 남기지만 보이지는 않게하기
+
+```javascript
+if (fullCups == totalCups) {
+    remained.style.visibility = 'hidden'
+    remained.style.height = 0
+} else {
+    remained.style.visibility = 'visible'
+    remained.style.height = 'auto'
 ```
