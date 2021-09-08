@@ -365,3 +365,13 @@ if (fullCups == totalCups) {
     remained.style.visibility = 'visible'
     remained.style.height = 'auto'
 ```
+
+### Day - 17 | Movie App
+
+* input에서 placehold 스타일 바꾸기
+
+```css
+.search::placeholder {
+    color: #7378c5;
+}
+```
