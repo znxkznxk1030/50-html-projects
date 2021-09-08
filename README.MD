@@ -375,3 +375,9 @@ if (fullCups == totalCups) {
     color: #7378c5;
 }
 ```
+
+* 페이지 통째로 리로드 시키기
+
+```javascript
+window.location.reload()
+```
