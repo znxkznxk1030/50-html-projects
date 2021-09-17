@@ -402,3 +402,16 @@ window.location.reload();
   crossorigin="anonymous"
 />
 ```
+
+- background 설정 good practice
+
+``` css
+  background-position: center center;
+  background-size: cover;
+```
+
+- js에서 element의 background image 가져오기
+
+``` javascript
+body.style.backgroundImage = slides[activeSlide].style.backgroundImage;
+```
