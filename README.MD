@@ -405,13 +405,39 @@ window.location.reload();
 
 - background 설정 good practice
 
-``` css
-  background-position: center center;
-  background-size: cover;
+```css
+background-position: center center;
+background-size: cover;
 ```
 
 - js에서 element의 background image 가져오기
 
-``` javascript
+```javascript
 body.style.backgroundImage = slides[activeSlide].style.backgroundImage;
+```
+
+### Day - 19 | Theme Clock
+
+- CSS | Dark mode
+
+```css
+:root {
+  --primary-color: #000;
+  --secondary-color: #fff;
+}
+
+html {
+  transition: all .5s ease-in;
+}
+
+
+html.dark {
+  --primary-color: #fff;
+  --secondary-color: #333;
+}
+
+html.dark {
+  background-color: #111;
+  color: var(--primary-color);
+}
 ```
