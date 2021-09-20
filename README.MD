@@ -427,9 +427,8 @@ body.style.backgroundImage = slides[activeSlide].style.backgroundImage;
 }
 
 html {
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
-
 
 html.dark {
   --primary-color: #fff;
@@ -440,6 +439,20 @@ html.dark {
   background-color: #111;
   color: var(--primary-color);
 }
+```
+
+```javascript
+toggleEl.addEventListener("click", (e) => {
+  const html = document.querySelector("html");
+
+  if (html.classList.contains("dark")) {
+    html.classList.remove("dark");
+    e.target.innerText = "Dark Mode";
+  } else {
+    html.classList.add("dark");
+    e.target.innerText = "Light Mode";
+  }
+});
 ```
 
 - 분기없이 flex 쓰기
