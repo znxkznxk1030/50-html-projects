@@ -441,3 +441,9 @@ html.dark {
   color: var(--primary-color);
 }
 ```
+
+- 분기없이 flex 쓰기
+
+```css
+display: inline-flex;
+```
