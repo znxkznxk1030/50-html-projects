@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
 
 :root {
   --primary-color: #000;
@@ -75,6 +75,7 @@ body {
   height: 65px;
   width: 3px;
   transform-origin: bottom center;
+  transition: all .5s ease-in;
   /* transform: rotate(35deg); */
 }
 

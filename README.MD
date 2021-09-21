@@ -460,3 +460,8 @@ toggleEl.addEventListener("click", (e) => {
 ```css
 display: inline-flex;
 ```
+
+- Nested Template literals
+``` javascript
+`${hoursForClock}:${minutes < 10 ? `0${minutes}`: `${minutes}`}${ampm}`
+```
