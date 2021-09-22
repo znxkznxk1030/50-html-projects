@@ -465,3 +465,25 @@ display: inline-flex;
 ``` javascript
 `${hoursForClock}:${minutes < 10 ? `0${minutes}`: `${minutes}`}${ampm}`
 ```
+
+### Day - 20 | Button Ripple Effect
+
+- 버튼 클릭시 퍼지는 효과
+
+```css
+button .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale .5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+```
