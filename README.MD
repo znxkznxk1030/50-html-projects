@@ -487,3 +487,24 @@ button .circle {
     opacity: 0;
   }
 ```
+
+- event | clientX, clientY
+브라우저 창 좌상단 모서리를 기준으로, 마우스의 x, y 좌표
+
+```javascript
+const x = e.clientX
+const y = e.clinetY
+```
+
+- event.target | offsetX, offsetY
+해당 객체를 기준으로 한 마우스의 X, Y 좌표
+
+```javascript
+const buttonTop = e.target.offsetTop;
+const buttonLeft = e.target.offsetLeft;
+```
+
+- event | this
+
+에로우 함수일 경우 => Window
+일반 함수일 경우 => 호출하는 DOM ( ex <button class="ripple"></button>)
